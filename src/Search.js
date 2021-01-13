@@ -3,6 +3,8 @@ import { ToastsStore } from 'react-toasts';
 import axios from "axios";
 import Movies from "./Movies";
 import Nominated from "./Nominated";
+import env from 'dotenv'
+env.config()
 
 class Search extends Component {
   state = {
@@ -15,7 +17,7 @@ class Search extends Component {
   handleSearch = () => {
     this.setState({loading: true});
     axios.get(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=adc62984&type=movie&s=${this.state.searchMovie}`)
+        `${process.env.REACT_APP_URL}&s=${this.state.searchMovie}`)
       .then((res) => {
         this.setState({
           movies: res.data.Search,loading:false
