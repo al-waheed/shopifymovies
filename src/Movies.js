@@ -1,3 +1,4 @@
+
 import React from "react";
 import {ToastsContainer, ToastsStore, ToastsContainerPosition } from 'react-toasts';
 
@@ -26,7 +27,7 @@ const Movies = ({ movies, nominateMovies, loading, movieIds, isNotify }) => {
 	
   return (
     <div className="movie-container">
-      {loading ? (<div className='loading'><h2 className='loader'></h2></div>) : <div className="movie-box">{movieLists}</div>}
+      {loading ? (<div className='loading'><span className='loader'></span></div>) : <div className="movie-box">{movieLists}</div>}
     </div>
   );
 };
