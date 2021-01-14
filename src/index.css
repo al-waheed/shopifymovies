@@ -30,12 +30,13 @@ body {
 .search-box h4 {
   font-size: 15px;
   color: #777;
+  margin-bottom: 2px;
 }
 
 .search-box .search-input {
   width: 68rem;
   padding: 15px 15px;
-  margin-right: 5px;
+  margin-right: 2px;
   font-size: 20px;
   outline: none;
   border-radius: 10px;
@@ -43,10 +44,18 @@ body {
 }
 
 .search-box .search-btn {
-  font-size: 20px;
-  padding: 15px 15px;
+  background-color: rgb(61, 60, 60);
+  border: none;
   border-radius: 10px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
   cursor: pointer;
+  outline: none;
+}
+
+.search-box .search-btn:hover {
+  background-color: rgb(48, 47, 47);
 }
 
 /* movies styling */

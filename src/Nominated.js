@@ -13,7 +13,7 @@ const Nominated = ({ nominated, removedMovies }) => {
 		   <div className="nominate-title">{nominate.Title} ({nominate.Year})</div>
 		  <button onClick={()=>{removedMovies(nominate.imdbID)
 		  ToastsStore.error("Hey, you just removed your nominated movie!")
-		}} className='nominate-btn'>Remove</button>
+		}} className='nominate-btn'><i class="fa fa-close"></i> Remove</button>
 		  </div>
 		  <ToastsContainer store={ToastsStore} position={ToastsContainerPosition.TOP_RIGHT}/>
 		  </div>

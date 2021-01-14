@@ -78,7 +78,7 @@ class Search extends Component {
                   onChange={this.handleChange}
                   className="search-input"/>
                 <button onClick={this.handleSearch} className="search-btn">
-                search
+                <i class="fa fa-search"></i>
                 </button>
               </fieldset>
             </form>
