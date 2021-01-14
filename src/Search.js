@@ -5,6 +5,7 @@ import Movies from "./Movies";
 import Nominated from "./Nominated";
 import env from 'dotenv'
 import Footer from "./Footer";
+import pic from './image/pic.png'
 env.config()
 
 class Search extends Component {
@@ -67,14 +68,17 @@ class Search extends Component {
       <div>
         <div className="search-box">
           <div>
+            <div className='headingText'>
+            <img src={pic} alt='icon-pics' className='iconPics'/>
             <h1>The Movies</h1>
+            </div>
             <form onSubmit={this.handleSubmit}>
               <fieldset className="search-fieldset">
                 <h4>Movie title</h4>
                 <input
                   type="text"
                   required
-                  placeholder="Search movie..."
+                  placeholder="Search Movie"
                   onChange={this.handleChange}
                   className="search-input"/>
                 <button onClick={this.handleSearch} className="search-btn">
