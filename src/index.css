@@ -17,18 +17,21 @@ body {
 .search-box .headingText{
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .search-box .iconPics{
   width: 80px;
+  height: 100px;
 }
 
 .search-box h1 {
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 18px;
   margin-left: 10px;
+  font-family: 'Tangerine' ;
   color: white;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 .search-fieldset {
@@ -252,7 +255,6 @@ body {
   cursor: not-allowed;
   }
 
-
 .nominate-card .nominate-btn:hover {
   background-color: rgb(2, 105, 2);
 }
@@ -283,6 +285,7 @@ body {
   padding-top: 0.5rem;
   font-size: 35px;
   font-weight: 800;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 .footer .footerSubtext{
