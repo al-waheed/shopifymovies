@@ -4,6 +4,7 @@ import axios from "axios";
 import Movies from "./Movies";
 import Nominated from "./Nominated";
 import env from 'dotenv'
+import Footer from "./Footer";
 env.config()
 
 class Search extends Component {
@@ -83,11 +84,16 @@ class Search extends Component {
             </form>
           </div>
         </div>
-        <div className="movielist">
+        <div className='container'>
+           <div className="movielist">
             <Movies movies={movies} nominateMovies={this.nominateMovies} loading={loading}  movieIds={movieIds} isNotify={this.isNotify} />
             <Nominated nominated={nominated} removedMovies={this.removedMovies} />
           </div>
+          <div>
+            <Footer />
+          </div>
       </div>
+    </div>
     );
   }
 }

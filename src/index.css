@@ -131,9 +131,8 @@ body {
 
 .movie-container .loading {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6rem;
+  float: right;
+  margin-top: 14rem;
 }
 
 .movie-container .loader {
@@ -173,7 +172,6 @@ body {
 .movielist {
   display: flex;
   margin: 1rem 3.4rem;
-  /* background-color: white; */
   border-radius: 10px;
 } 
 
@@ -248,17 +246,20 @@ body {
 /* nominate styling end */
 
 /* footer styling */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
 
 .footer{
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   color: #f3f3f3;
   font-family: fantasy;
   background-color: rgb(32, 32, 32);
-  position: absolute;
-  bottom: 0;
 }
 
 .footer .footerText{
