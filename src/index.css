@@ -17,7 +17,8 @@ body {
 .search-box .headingText{
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: -1px;
 }
 
 .search-box .iconPics{
@@ -29,7 +30,8 @@ body {
   font-size: 30px;
   margin-top: 18px;
   margin-left: 10px;
-  font-family: 'Tangerine' ;
+  margin-bottom: -8px;
+  font-family: 'Tangerine';
   color: white;
   text-shadow: 4px 4px 4px #aaa;
 }
@@ -94,6 +96,7 @@ body {
   border-radius: 5px;
   background-color: rgb(7, 153, 7);
   border: none;
+  margin-top: 5px;
   color: #ffffff;
   text-align: center;
   font-size: 20px;
@@ -102,6 +105,19 @@ body {
   cursor: pointer;
   outline: none;
 }
+
+.movie-card .btn-gray {
+  background-color: gray;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 18px;
+  outline: none;
+  cursor: not-allowed;
+  }
 
 .movie-card .movie-btn span {
   cursor: pointer;
@@ -242,19 +258,6 @@ body {
   outline: none;
 }
 
-.btn-gray {
-  background-color: gray;
-  display: inline-block;
-  border-radius: 5px;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  font-size: 20px;
-  padding: 10px 18px;
-  outline: none;
-  cursor: not-allowed;
-  }
-
 .nominate-card .nominate-btn:hover {
   background-color: rgb(2, 105, 2);
 }
@@ -263,6 +266,7 @@ body {
   color: white;
   text-align: center;
 } 
+
 /* nominate styling end */
 
 /* footer styling */

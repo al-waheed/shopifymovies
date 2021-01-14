@@ -12,8 +12,7 @@ class Search extends Component {
   state = {
     movies: [],
     nominated: [],
-    searchMovie: "",
-    loading: false,
+    searchMovie: ""
   };
 
   handleSearch = () => {
@@ -39,8 +38,8 @@ class Search extends Component {
   }
 
   removedMovies = (id) => {
-    const removeMovie = this.state.nominated.filter((movies) => {
-      return movies.imdbID !== id;
+    const removeMovie = this.state.nominated.filter((movie) => {
+      return movie.imdbID !== id;
     });
     this.setState({
       nominated: removeMovie,
@@ -75,15 +74,8 @@ class Search extends Component {
             <form onSubmit={this.handleSubmit}>
               <fieldset className="search-fieldset">
                 <h4>Movie title</h4>
-                <input
-                  type="text"
-                  required
-                  placeholder="Search Movie"
-                  onChange={this.handleChange}
-                  className="search-input"/>
-                <button onClick={this.handleSearch} className="search-btn">
-                <i class="fa fa-search"></i>
-                </button>
+                <input type="text" required placeholder="Search Movie" onChange={this.handleChange} className="search-input"/>
+                <button onClick={this.handleSearch} className="search-btn"> <i class="fa fa-search"></i></button>
               </fieldset>
             </form>
           </div>

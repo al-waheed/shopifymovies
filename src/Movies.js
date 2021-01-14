@@ -1,4 +1,3 @@
-
 import React from "react";
 import {ToastsContainer, ToastsStore, ToastsContainerPosition } from 'react-toasts';
 
@@ -11,8 +10,7 @@ const Movies = ({ movies, nominateMovies, loading, movieIds, isNotify }) => {
         <div className='movie'>
           <img src={movie.Poster} alt="pics" className="movie-pics"/>
           <div className="movie-title">{movie.Title} ({movie.Year})</div>
-          <button
-           onClick={() =>{ nominateMovies(movie) 
+          <button onClick={() =>{ nominateMovies(movie) 
             isNotify()      
           }} 
            className={`${isNominated ? 'btn-gray' :' movie-btn'}`}
